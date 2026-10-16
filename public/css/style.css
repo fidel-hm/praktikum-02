@@ -3,6 +3,7 @@
     --color-links: #00A7E1;
     --color-text: #141115;
     --color-link-hover: #2200e1;
+    --color-card-background: #9E8FB2;
     --font-body: poppins;
 }
 
@@ -21,7 +22,7 @@ body {
 }
 
 .site-nav a {
-color: var(--color-text);
+    color: var(--color-text);
 }
 
 a {
@@ -32,26 +33,56 @@ a:hover {
 }
 
 main {
-    max-width: 800;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .project-card {
-    background-color: #9E8FB2;
+    background-color: var(--color-card-background);
     padding: 2rem;
-    border: #ffffff;
+    border: 2px dashed #ffffff;
     border-radius: 1rem;
     margin-bottom: 5px;
 }
 
-.site-header {
-
+@media (min-width: 40rem){
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
-.site-nav {
-
+.site-nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
 }
 
 .site-footer {
 
+}
+
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 40rem) {
+    .project-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.definition-list {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
