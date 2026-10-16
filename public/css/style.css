@@ -1,0 +1,21 @@
+:root {
+    --color-primary: #dac4b8;
+    --color-links: #00A7E1;
+    --color-text: #141115;
+    --color-link-hover: #2200e1;
+    --font-body: poppins;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.5;
+    color: var(--color-text);
+    background-color: var(--color-primary);
+}
+
+a {
+    color: var(--color-links);
+}
+a:hover {
+    color: var(--color-link-hover);
+}
