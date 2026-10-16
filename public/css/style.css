@@ -6,11 +6,22 @@
     --font-body: poppins;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-body);
     line-height: 1.5;
     color: var(--color-text);
     background-color: var(--color-primary);
+    margin: 0;
+}
+
+.site-nav a {
+color: var(--color-text);
 }
 
 a {
@@ -18,4 +29,29 @@ a {
 }
 a:hover {
     color: var(--color-link-hover);
+}
+
+main {
+    max-width: 800;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #9E8FB2;
+    padding: 2rem;
+    border: #ffffff;
+    border-radius: 1rem;
+    margin-bottom: 5px;
+}
+
+.site-header {
+
+}
+
+.site-nav {
+
+}
+
+.site-footer {
+
 }
